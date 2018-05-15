@@ -19,7 +19,7 @@ $valor_final = $separados[1];
 $data = file_get_contents("data-1.json");
 $products= json_decode($data, true);
 $arreglo_final ='';
-
+$i=0;
 foreach ($products as $product)
 {
 		$arreglo_final[$i]['Id']=$product['Id'];
@@ -111,8 +111,12 @@ foreach ($arreglo_final3 as $product)
 		$i++;
 		}//finde if 
 }//finde foreach
-
-
+/*
+$filas_arreglo = sizeof($arreglo_final);
+$filas_arreglo2  = count($arreglo_final);
+echo '<br>filas <br>'.$filas_arreglo.'<br>';
+echo '<br>count <br>'.$filas_arreglo2.'<br>';
+*/
 echo '<table border = "1">';
 echo '<tr>';
 echo '<td>Id</td>';	
@@ -123,8 +127,6 @@ echo '<td>Codigo_Postal</td>';
 echo '<td>Tipo</td>';
 echo '<td>Precio</td>';
 echo '</tr>';
-
-
 
 foreach ($arreglo_final as $nuevo4)
 {
