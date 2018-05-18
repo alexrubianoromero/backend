@@ -10,6 +10,8 @@
   <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
 
   
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formulario</title>
   <style>
@@ -42,6 +44,7 @@
   </style>
 </head>
 <?php
+/**/
 include('ciudadesytipos.php');
 ?>
 <body>
