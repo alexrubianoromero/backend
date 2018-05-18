@@ -34,6 +34,11 @@
 
              display:inline;
           }
+          #resultados_nuevos{
+            width: 100%;
+            position:relative;
+            display: block;
+          }
   </style>
 </head>
 <?php
@@ -98,10 +103,12 @@ include('ciudadesytipos.php');
     <div class="colContenido">
       <div class="tituloContenido card">
         <h5>Resultados de la búsqueda:</h5>
+        <button type="button" name="todos" class="btn-flat waves-effect" id="mostrarTodos">Mostrar Todos</button>
+        <br>
         <div id="resultados_nuevos"></div>
         <div class="divider"></div>
 
-        <button type="button" name="todos" class="btn-flat waves-effect" id="mostrarTodos">Mostrar Todos</button>
+        
       </div>
 
     </div>

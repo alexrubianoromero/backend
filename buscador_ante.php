@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<style>
-	  #formato_precio{
-	  	font-size: 20px;
-	  	color:#FFD733;
-	  	display: inline-block;
-	  }
 
-	  #vermas{
-	  	width: 100%
-	  	heigth:50px;
-	  	/*border:1px solid black;*/
-	  }
-	</style>
-</head>
-<body>
 <?php
 /*
 echo '<pre>';
@@ -134,9 +117,7 @@ $filas_arreglo2  = count($arreglo_final);
 echo '<br>filas <br>'.$filas_arreglo.'<br>';
 echo '<br>count <br>'.$filas_arreglo2.'<br>';
 */
-
 echo '<table border = "1">';
-/*
 echo '<tr>';
 echo '<td>Id</td>';	
 echo '<td>Direccion</td>';
@@ -145,36 +126,19 @@ echo '<td>Telefono</td>';
 echo '<td>Codigo_Postal</td>';
 echo '<td>Tipo</td>';
 echo '<td>Precio</td>';
-*/
 echo '</tr>';
 
 foreach ($arreglo_final as $nuevo4)
 {
-	echo '<tr><td></td><td></td></tr>';
-	echo '<tr><td></td><td></td></tr>';
 echo '<tr>';	
-		echo '<td rowspan="2"><img  src="img/home.jpg" width="300px"  heigth="300px"></td>';
-		echo '<td>';
-		echo '<b>Direccion:</b>'.$nuevo4['Direccion'];
-		echo '<br><b>Ciudad:</b> '.$nuevo4['Ciudad'];
-		echo '<br><b>Telefono:</b> '.$nuevo4['Telefono'];
-		echo '<br><b>Codigo_Postal: </b>'.$nuevo4['Codigo_Postal'];
-		echo '<br><b>Tipo: </b>'.$nuevo4['Tipo'];
-		echo '<br><b>Precio: </b><div id="formato_precio">$'.number_format($nuevo4['Precio'], 0, ',', '.').'</div>';
-		echo '<hr></hr>';
-
-		echo '</td>';
-		/*
+		echo '<td>'.$nuevo4['Id'].'</td>';
 		echo '<td>'.$nuevo4['Direccion'].'</td>';
 		echo '<td>'.$nuevo4['Ciudad'].'</td>';
 		echo '<td>'.$nuevo4['Telefono'].'</td>';
 		echo '<td>'.$nuevo4['Codigo_Postal'].'</td>';
 		echo '<td>'.$nuevo4['Tipo'].'</td>';
 		echo '<td>'.$nuevo4['Precio'].'</td>';
-		*/
 		echo '</tr>';
-		echo '<tr><td colspan = "2" align="left" valing ="top"><div id="vermas" align="right">VER MAS</div></td></tr>';
-		
 }
 echo '</table>';
 
@@ -185,5 +149,3 @@ echo '</table>';
 
 
 ?>
-</body>
-</html>
